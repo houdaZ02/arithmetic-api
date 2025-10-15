@@ -3,7 +3,7 @@
 # --- Configuration ---
 PROJECT_DIR="/home/kalihuda/arithmetic_api"
 GIT_REPO="https://github.com/houdaZ02/arithmetic-api.git"
-DOCKER_IMAGE="hudaZ002/arithmetic-api"
+DOCKER_IMAGE="hudaz002/arithmetic-api"
 CONTAINER_NAME="arithmetic-api-container"
 PORT="5000:5000"
 
@@ -32,7 +32,7 @@ if [ "$LOCAL" != "$REMOTE" ]; then
 
     # --- Push to Docker Hub ---
     echo "Pushing Docker image to Docker Hub..."
-    docker login --username hudaZ002
+    docker login --username hudaz002
     docker push "$DOCKER_IMAGE"
 
     echo "Done! Docker image pushed to Docker Hub as $DOCKER_IMAGE:latest"
